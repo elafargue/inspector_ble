@@ -15,6 +15,12 @@ bleak-retry-connector = "^3.1.2"
 "Bug Tracker" = "https://github.com/elafargue/medcom-ble/issues"
 "Changelog" = "https://github.com/elafargue/medcom-ble/blob/main/CHANGELOG.md"
 
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+pytest-cov = "^3.0"
+black = {version = "^22.6.0", allow-prereleases = true}
+mypy = "^0.971"
+pylint = "^2.14.5"
 
 [build-system]
 requires = ["poetry-core"]

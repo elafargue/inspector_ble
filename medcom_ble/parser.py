@@ -84,10 +84,7 @@ class NotificationHandler:
 # Generic way to map sensor characteristics to decoders.
 # This is overkill for just one sensor right now, but can be used
 # in the future if we add more sensor types.
-sensor_decoders: dict[
-    str,
-    Callable[[bytearray], dict[str, float | None | str]],
-] = {
+sensor_decoders: dict[str, Callable[[bytearray], dict[str, float | None | str]],] = {
     str(INSPECTOR_CPM_UUID): _decode_re_attr(
         name="cpm", format_type="ascii", regexp=re.compile("[0-9]+")
     ),
